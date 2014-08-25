@@ -16,10 +16,13 @@
 
 h1 {
     font-family: "Arial", Gadget, sans-serif;
+    margin: 0px;
+
 }
 
 h3 {
     font-family: "Arial", Gadget, sans-serif;
+    margin: 0px;
 }
 
 .container {
