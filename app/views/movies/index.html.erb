@@ -5,16 +5,15 @@
 <p>
 
 
-<% @movies.each do |movie| %>
+  <% @movies.each do |movie| %>
 
-<section class="movie">
+    <section class="movie">
 
-  <div class="title"><%= "#{movie.name} (#{movie.year})" %></div>
-  <div></div>
-  <div><%= "#{movie.synopsis}" %></div>
+      <div class="title"><%= "#{movie.name} (#{movie.year})" %></div>
+      <div></div>
+      <div style="word-wrap: break-word; width: 300px"><%= "#{movie.synopsis}" %></div>
 
+    </section>
+    <br>
 
-
-</section>
-
-<% end %>
+  <% end %>
