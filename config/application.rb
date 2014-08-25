@@ -28,3 +28,4 @@ module G3AssessmentWeek12
     # config.i18n.default_locale = :de
   end
 end
+

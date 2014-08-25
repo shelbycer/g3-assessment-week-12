@@ -14,24 +14,29 @@
  *= require_self
  */
 
+h1 {
+    font-family: "Arial", Gadget, sans-serif;
+}
+
+h3 {
+    font-family: "Arial", Gadget, sans-serif;
+}
+
 .container {
     width: 960px;
     margin: 0 auto;
     box-sizing: border-box;
+    font-family: "Arial", Gadget, sans-serif;
 
-    &: after;
-{
-    visibility: hidden;
-    display: block;
-    font-size: 0;
-    content: " ";
-    clear: both;
-    height: 0;
-}
 }
 
 .errors {
-    color: red;
+    display: inline;
+    color: red
+}
+
+.field_with_errors {
+    display: inline;
 }
 
 .title {
