@@ -1,0 +1,41 @@
+<h1>Cageflix</h1>
+<h3>Netflix for Nic Cage movies</h3>
+
+  <% if @movie.errors.any? %>
+    <% @movie.errors.full_messages.each do |message| %>
+    <div class="errors">
+      <ul>
+        <%= message %>
+      </ul>
+      </div>
+    <% end %>
+  <% end %>
+
+  <%= form_for @movie do |f| %>
+
+    <div class="container">
+      <%= f.label :name %>
+      <br>
+      <%= f.text_field :name, autofocus: true %>
+    </div>
+
+    <div class="container">
+      <%= f.label :year %>
+      <br>
+      <%= f.text_field :year, autofocus: true %>
+    </div>
+
+    <div class="container">
+      <%= f.label :synopsis %>
+      <br>
+      <%= f.text_area :synopsis, autofocus: true, :size => "30x10" %>
+    </div>
+
+  <br>
+
+    <div class="container">
+      <%= f.submit "Create Movie" %>
+    </div>
+
+
+  <% end %>
